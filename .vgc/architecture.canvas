@@ -1,0 +1,411 @@
+{
+  "vv": {
+    "name": "Fabric Architecture",
+    "version": "1.0.0",
+    "nodeTypes": {
+      "cli": {
+        "label": "CLI Interface",
+        "color": "#00BFFF",
+        "icon": "Terminal"
+      },
+      "webui": {
+        "label": "Web UI (Svelte)",
+        "color": "#00FF7F",
+        "icon": "Globe"
+      },
+      "api": {
+        "label": "REST API Server",
+        "color": "#FF8C00",
+        "icon": "Server"
+      },
+      "registry": {
+        "label": "Plugin Registry",
+        "color": "#9370DB",
+        "icon": "Package"
+      },
+      "chatter": {
+        "label": "Chat Engine",
+        "color": "#9370DB",
+        "icon": "MessageSquare"
+      },
+      "template": {
+        "label": "Template Engine",
+        "color": "#9370DB",
+        "icon": "FileText"
+      },
+      "anthropic": {
+        "label": "Anthropic (Claude)",
+        "color": "#FF1493",
+        "icon": "Brain"
+      },
+      "openai": {
+        "label": "OpenAI (GPT)",
+        "color": "#FF1493",
+        "icon": "Brain"
+      },
+      "gemini": {
+        "label": "Google Gemini",
+        "color": "#FF1493",
+        "icon": "Brain"
+      },
+      "ollama": {
+        "label": "Ollama (Local)",
+        "color": "#FF1493",
+        "icon": "Cpu"
+      },
+      "fsdb": {
+        "label": "File-System DB",
+        "color": "#FFD700",
+        "icon": "Database"
+      },
+      "patterns": {
+        "label": "Patterns Library",
+        "color": "#FFD700",
+        "icon": "Library"
+      },
+      "youtube": {
+        "label": "YouTube API",
+        "color": "#00FF7F",
+        "icon": "Youtube"
+      }
+    },
+    "edgeTypes": {
+      "call": {
+        "label": "API Call",
+        "style": "solid"
+      },
+      "stream": {
+        "label": "Stream",
+        "style": "animated"
+      },
+      "read": {
+        "label": "Read",
+        "style": "dashed"
+      },
+      "write": {
+        "label": "Write",
+        "style": "dashed"
+      },
+      "uses": {
+        "label": "Uses",
+        "style": "dotted"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "cli",
+      "type": "text",
+      "text": "CLI Interface",
+      "x": 407,
+      "y": -214,
+      "width": 160,
+      "height": 80,
+      "color": "#00BFFF",
+      "vv": {
+        "nodeType": "cli",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "webui",
+      "type": "text",
+      "text": "Web UI (Svelte)",
+      "x": 367,
+      "y": 64,
+      "width": 160,
+      "height": 80,
+      "color": "#00FF7F",
+      "vv": {
+        "nodeType": "webui",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "api",
+      "type": "text",
+      "text": "REST API Server",
+      "x": 366,
+      "y": 251,
+      "width": 160,
+      "height": 80,
+      "color": "#FF8C00",
+      "vv": {
+        "nodeType": "api",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "registry",
+      "type": "text",
+      "text": "Plugin Registry",
+      "x": 713,
+      "y": 53,
+      "width": 160,
+      "height": 80,
+      "color": "#9370DB",
+      "vv": {
+        "nodeType": "registry",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "chatter",
+      "type": "text",
+      "text": "Chat Engine",
+      "x": 709,
+      "y": 216,
+      "width": 160,
+      "height": 80,
+      "color": "#9370DB",
+      "vv": {
+        "nodeType": "chatter",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "template",
+      "type": "text",
+      "text": "Template Engine",
+      "x": 709,
+      "y": 569,
+      "width": 160,
+      "height": 80,
+      "color": "#9370DB",
+      "vv": {
+        "nodeType": "template",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "anthropic",
+      "type": "text",
+      "text": "Anthropic (Claude)",
+      "x": 1081,
+      "y": 612,
+      "width": 180,
+      "height": 80,
+      "color": "#FF1493",
+      "vv": {
+        "nodeType": "anthropic",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "openai",
+      "type": "text",
+      "text": "OpenAI (GPT)",
+      "x": 1173,
+      "y": 468,
+      "width": 180,
+      "height": 80,
+      "color": "#FF1493",
+      "vv": {
+        "nodeType": "openai",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "gemini",
+      "type": "text",
+      "text": "Google Gemini",
+      "x": 1243,
+      "y": 321,
+      "width": 180,
+      "height": 80,
+      "color": "#FF1493",
+      "vv": {
+        "nodeType": "gemini",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "ollama",
+      "type": "text",
+      "text": "Ollama (Local)",
+      "x": 1001,
+      "y": 780,
+      "width": 180,
+      "height": 80,
+      "color": "#FF1493",
+      "vv": {
+        "nodeType": "ollama",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "fsdb",
+      "type": "text",
+      "text": "File-System DB",
+      "x": 366,
+      "y": 569,
+      "width": 160,
+      "height": 80,
+      "color": "#FFD700",
+      "vv": {
+        "nodeType": "fsdb",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "patterns",
+      "type": "text",
+      "text": "Patterns Library",
+      "x": 708,
+      "y": 812,
+      "width": 160,
+      "height": 80,
+      "color": "#FFD700",
+      "vv": {
+        "nodeType": "patterns",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "youtube",
+      "type": "text",
+      "text": "YouTube API",
+      "x": 45,
+      "y": 80,
+      "width": 160,
+      "height": 80,
+      "color": "#00FF7F",
+      "vv": {
+        "nodeType": "youtube",
+        "shape": "rectangle"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "cli-registry",
+      "fromNode": "cli",
+      "toNode": "registry",
+      "label": "Uses",
+      "color": "#9370DB",
+      "vv": {
+        "edgeType": "uses"
+      }
+    },
+    {
+      "id": "webui-api",
+      "fromNode": "webui",
+      "toNode": "api",
+      "label": "API Call",
+      "color": "#FF8C00",
+      "vv": {
+        "edgeType": "call"
+      }
+    },
+    {
+      "id": "api-registry",
+      "fromNode": "api",
+      "toNode": "registry",
+      "label": "Uses",
+      "color": "#9370DB",
+      "vv": {
+        "edgeType": "uses"
+      }
+    },
+    {
+      "id": "registry-chatter",
+      "fromNode": "registry",
+      "toNode": "chatter",
+      "label": "Uses",
+      "color": "#9370DB",
+      "vv": {
+        "edgeType": "uses"
+      }
+    },
+    {
+      "id": "chatter-template",
+      "fromNode": "chatter",
+      "toNode": "template",
+      "label": "Uses",
+      "color": "#9370DB",
+      "vv": {
+        "edgeType": "uses"
+      }
+    },
+    {
+      "id": "chatter-anthropic",
+      "fromNode": "chatter",
+      "toNode": "anthropic",
+      "label": "Stream",
+      "color": "#FF1493",
+      "vv": {
+        "edgeType": "stream"
+      }
+    },
+    {
+      "id": "chatter-openai",
+      "fromNode": "chatter",
+      "toNode": "openai",
+      "label": "Stream",
+      "color": "#FF1493",
+      "vv": {
+        "edgeType": "stream"
+      }
+    },
+    {
+      "id": "chatter-gemini",
+      "fromNode": "chatter",
+      "toNode": "gemini",
+      "label": "Stream",
+      "color": "#FF1493",
+      "vv": {
+        "edgeType": "stream"
+      }
+    },
+    {
+      "id": "chatter-ollama",
+      "fromNode": "chatter",
+      "toNode": "ollama",
+      "label": "Stream",
+      "color": "#FF1493",
+      "vv": {
+        "edgeType": "stream"
+      }
+    },
+    {
+      "id": "registry-fsdb",
+      "fromNode": "registry",
+      "toNode": "fsdb",
+      "label": "Uses",
+      "color": "#9370DB",
+      "vv": {
+        "edgeType": "uses"
+      }
+    },
+    {
+      "id": "fsdb-patterns",
+      "fromNode": "fsdb",
+      "toNode": "patterns",
+      "label": "Read",
+      "color": "#FFD700",
+      "vv": {
+        "edgeType": "read"
+      }
+    },
+    {
+      "id": "template-patterns",
+      "fromNode": "template",
+      "toNode": "patterns",
+      "label": "Read",
+      "color": "#FFD700",
+      "vv": {
+        "edgeType": "read"
+      }
+    },
+    {
+      "id": "cli-youtube",
+      "fromNode": "cli",
+      "toNode": "youtube",
+      "label": "API Call",
+      "color": "#00FF7F",
+      "vv": {
+        "edgeType": "call"
+      }
+    }
+  ]
+}

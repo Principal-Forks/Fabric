@@ -1,0 +1,119 @@
+version: "1.0.0"
+name: "Fabric Architecture Component Library"
+
+nodeComponents:
+  # User Interfaces
+  cli:
+    label: "CLI Interface"
+    color: 1
+    icon: "Terminal"
+
+  webui:
+    label: "Web UI (Svelte)"
+    color: 2
+    icon: "Globe"
+
+  api:
+    label: "REST API Server"
+    color: 3
+    icon: "Server"
+
+  # Core Components
+  registry:
+    label: "Plugin Registry"
+    color: 4
+    icon: "Package"
+
+  chatter:
+    label: "Chat Engine"
+    color: 4
+    icon: "MessageSquare"
+
+  template:
+    label: "Template Engine"
+    color: 4
+    icon: "FileText"
+
+  # AI Vendors
+  anthropic:
+    label: "Anthropic (Claude)"
+    color: 5
+    icon: "Brain"
+
+  openai:
+    label: "OpenAI (GPT)"
+    color: 5
+    icon: "Brain"
+
+  gemini:
+    label: "Google Gemini"
+    color: 5
+    icon: "Brain"
+
+  ollama:
+    label: "Ollama (Local)"
+    color: 5
+    icon: "Cpu"
+
+  bedrock:
+    label: "AWS Bedrock"
+    color: 5
+    icon: "Cloud"
+
+  azure:
+    label: "Azure OpenAI"
+    color: 5
+    icon: "Cloud"
+
+  # Storage & Data
+  fsdb:
+    label: "File-System DB"
+    color: 6
+    icon: "Database"
+
+  patterns:
+    label: "Patterns Library"
+    color: 6
+    icon: "Library"
+
+  sessions:
+    label: "Session Storage"
+    color: 6
+    icon: "Archive"
+
+  # External Services
+  youtube:
+    label: "YouTube API"
+    color: 2
+    icon: "Youtube"
+
+  jina:
+    label: "Jina AI (Scraper)"
+    color: 2
+    icon: "Search"
+
+  github:
+    label: "GitHub API"
+    color: 2
+    icon: "Github"
+
+edgeComponents:
+  call:
+    label: "API Call"
+    style: "solid"
+
+  stream:
+    label: "Stream"
+    style: "animated"
+
+  read:
+    label: "Read"
+    style: "dashed"
+
+  write:
+    label: "Write"
+    style: "dashed"
+
+  uses:
+    label: "Uses"
+    style: "dotted"

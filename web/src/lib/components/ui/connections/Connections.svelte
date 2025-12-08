@@ -2,6 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import { ParticleSystem } from './ParticleSystem';
   import { createParticleGradient } from '$lib/components/ui/connections/canvas';
+  import { generateEdgeColor } from '$lib/components/ui/connections/colors';
 
   export let particleCount = 100;
   export let particleSize = 3;
@@ -44,7 +45,7 @@
 
   function drawConnections() {
     const particles = particleSystem.getParticles();
-    ctx.lineWidth = 0.5;
+    ctx.lineWidth = 1.5;
 
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
@@ -54,7 +55,8 @@
 
         if (distance < connectionDistance) {
           const alpha = 1 - (distance / connectionDistance);
-          ctx.strokeStyle = `rgba(255, 255, 255, ${alpha * 0.15})`; // Slightly reduced opacity
+          // Create gradient edge color blending the two connected particles
+          ctx.strokeStyle = generateEdgeColor(particles[i].color, particles[j].color, alpha);
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);

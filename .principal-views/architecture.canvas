@@ -1,96 +1,7 @@
 {
-  "vv": {
+  "pv": {
     "name": "Fabric Architecture",
-    "version": "1.0.0",
-    "nodeTypes": {
-      "cli": {
-        "label": "CLI Interface",
-        "color": "#00BFFF",
-        "icon": "Terminal"
-      },
-      "webui": {
-        "label": "Web UI (Svelte)",
-        "color": "#00FF7F",
-        "icon": "Globe"
-      },
-      "api": {
-        "label": "REST API Server",
-        "color": "#FF8C00",
-        "icon": "Server"
-      },
-      "registry": {
-        "label": "Plugin Registry",
-        "color": "#9370DB",
-        "icon": "Package"
-      },
-      "chatter": {
-        "label": "Chat Engine",
-        "color": "#9370DB",
-        "icon": "MessageSquare"
-      },
-      "template": {
-        "label": "Template Engine",
-        "color": "#9370DB",
-        "icon": "FileText"
-      },
-      "anthropic": {
-        "label": "Anthropic (Claude)",
-        "color": "#FF1493",
-        "icon": "Brain"
-      },
-      "openai": {
-        "label": "OpenAI (GPT)",
-        "color": "#FF1493",
-        "icon": "Brain"
-      },
-      "gemini": {
-        "label": "Google Gemini",
-        "color": "#FF1493",
-        "icon": "Brain"
-      },
-      "ollama": {
-        "label": "Ollama (Local)",
-        "color": "#FF1493",
-        "icon": "Cpu"
-      },
-      "fsdb": {
-        "label": "File-System DB",
-        "color": "#FFD700",
-        "icon": "Database"
-      },
-      "patterns": {
-        "label": "Patterns Library",
-        "color": "#FFD700",
-        "icon": "Library"
-      },
-      "youtube": {
-        "label": "YouTube API",
-        "color": "#00FF7F",
-        "icon": "Youtube"
-      }
-    },
-    "edgeTypes": {
-      "call": {
-        "label": "API Call",
-        "style": "solid"
-      },
-      "stream": {
-        "label": "Stream",
-        "style": "animated"
-      },
-      "read": {
-        "label": "Read",
-        "style": "dashed"
-      },
-      "write": {
-        "label": "Write",
-        "style": "dashed"
-      },
-      "uses": {
-        "label": "Uses",
-        "style": "dotted"
-      }
-    }
+    "version": "1.0.0"
   },
   "nodes": [
     {
@@ -102,7 +13,7 @@
       "width": 160,
       "height": 80,
       "color": "#00BFFF",
-      "vv": {
+      "pv": {
         "nodeType": "cli",
         "shape": "rectangle"
       }
@@ -116,7 +27,7 @@
       "width": 160,
       "height": 80,
       "color": "#00FF7F",
-      "vv": {
+      "pv": {
         "nodeType": "webui",
         "shape": "rectangle"
       }
@@ -130,7 +41,7 @@
       "width": 160,
       "height": 80,
       "color": "#FF8C00",
-      "vv": {
+      "pv": {
         "nodeType": "api",
         "shape": "rectangle"
       }
@@ -144,7 +55,7 @@
       "width": 160,
       "height": 80,
       "color": "#9370DB",
-      "vv": {
+      "pv": {
         "nodeType": "registry",
         "shape": "rectangle"
       }
@@ -158,7 +69,7 @@
       "width": 160,
       "height": 80,
       "color": "#9370DB",
-      "vv": {
+      "pv": {
         "nodeType": "chatter",
         "shape": "rectangle"
       }
@@ -172,7 +83,7 @@
       "width": 160,
       "height": 80,
       "color": "#9370DB",
-      "vv": {
+      "pv": {
         "nodeType": "template",
         "shape": "rectangle"
       }
@@ -186,7 +97,7 @@
       "width": 180,
       "height": 80,
       "color": "#FF1493",
-      "vv": {
+      "pv": {
         "nodeType": "anthropic",
         "shape": "rectangle"
       }
@@ -200,7 +111,7 @@
       "width": 180,
       "height": 80,
       "color": "#FF1493",
-      "vv": {
+      "pv": {
         "nodeType": "openai",
         "shape": "rectangle"
       }
@@ -214,7 +125,7 @@
       "width": 180,
       "height": 80,
       "color": "#FF1493",
-      "vv": {
+      "pv": {
         "nodeType": "gemini",
         "shape": "rectangle"
       }
@@ -228,7 +139,7 @@
       "width": 180,
       "height": 80,
       "color": "#FF1493",
-      "vv": {
+      "pv": {
         "nodeType": "ollama",
         "shape": "rectangle"
       }
@@ -242,7 +153,7 @@
       "width": 160,
       "height": 80,
       "color": "#FFD700",
-      "vv": {
+      "pv": {
         "nodeType": "fsdb",
         "shape": "rectangle"
       }
@@ -256,7 +167,7 @@
       "width": 160,
       "height": 80,
       "color": "#FFD700",
-      "vv": {
+      "pv": {
         "nodeType": "patterns",
         "shape": "rectangle"
       }
@@ -270,7 +181,7 @@
       "width": 160,
       "height": 80,
       "color": "#00FF7F",
-      "vv": {
+      "pv": {
         "nodeType": "youtube",
         "shape": "rectangle"
       }
@@ -283,7 +194,7 @@
       "toNode": "registry",
       "label": "Uses",
       "color": "#9370DB",
-      "vv": {
+      "pv": {
         "edgeType": "uses"
       }
     },
@@ -293,7 +204,7 @@
       "toNode": "api",
       "label": "API Call",
       "color": "#FF8C00",
-      "vv": {
+      "pv": {
         "edgeType": "call"
       }
     },
@@ -303,7 +214,7 @@
       "toNode": "registry",
       "label": "Uses",
       "color": "#9370DB",
-      "vv": {
+      "pv": {
         "edgeType": "uses"
       }
     },
@@ -313,7 +224,7 @@
       "toNode": "chatter",
       "label": "Uses",
       "color": "#9370DB",
-      "vv": {
+      "pv": {
         "edgeType": "uses"
       }
     },
@@ -323,7 +234,7 @@
       "toNode": "template",
       "label": "Uses",
       "color": "#9370DB",
-      "vv": {
+      "pv": {
         "edgeType": "uses"
       }
     },
@@ -333,7 +244,7 @@
       "toNode": "anthropic",
       "label": "Stream",
       "color": "#FF1493",
-      "vv": {
+      "pv": {
         "edgeType": "stream"
       }
     },
@@ -343,7 +254,7 @@
       "toNode": "openai",
       "label": "Stream",
       "color": "#FF1493",
-      "vv": {
+      "pv": {
         "edgeType": "stream"
       }
     },
@@ -353,7 +264,7 @@
       "toNode": "gemini",
       "label": "Stream",
       "color": "#FF1493",
-      "vv": {
+      "pv": {
         "edgeType": "stream"
       }
     },
@@ -363,7 +274,7 @@
       "toNode": "ollama",
       "label": "Stream",
       "color": "#FF1493",
-      "vv": {
+      "pv": {
         "edgeType": "stream"
       }
     },
@@ -373,7 +284,7 @@
       "toNode": "fsdb",
       "label": "Uses",
       "color": "#9370DB",
-      "vv": {
+      "pv": {
         "edgeType": "uses"
       }
     },
@@ -383,7 +294,7 @@
       "toNode": "patterns",
       "label": "Read",
       "color": "#FFD700",
-      "vv": {
+      "pv": {
         "edgeType": "read"
       }
     },
@@ -393,7 +304,7 @@
       "toNode": "patterns",
       "label": "Read",
       "color": "#FFD700",
-      "vv": {
+      "pv": {
         "edgeType": "read"
       }
     },
@@ -403,7 +314,7 @@
       "toNode": "youtube",
       "label": "API Call",
       "color": "#00FF7F",
-      "vv": {
+      "pv": {
         "edgeType": "call"
       }
     }

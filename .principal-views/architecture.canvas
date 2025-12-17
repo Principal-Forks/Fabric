@@ -192,6 +192,8 @@
       "id": "cli-registry",
       "fromNode": "cli",
       "toNode": "registry",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "Uses",
       "color": "#9370DB",
       "pv": {
@@ -202,6 +204,8 @@
       "id": "webui-api",
       "fromNode": "webui",
       "toNode": "api",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "API Call",
       "color": "#FF8C00",
       "pv": {
@@ -212,6 +216,8 @@
       "id": "api-registry",
       "fromNode": "api",
       "toNode": "registry",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "Uses",
       "color": "#9370DB",
       "pv": {
@@ -222,6 +228,8 @@
       "id": "registry-chatter",
       "fromNode": "registry",
       "toNode": "chatter",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "Uses",
       "color": "#9370DB",
       "pv": {
@@ -232,6 +240,8 @@
       "id": "chatter-template",
       "fromNode": "chatter",
       "toNode": "template",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "Uses",
       "color": "#9370DB",
       "pv": {
@@ -242,6 +252,8 @@
       "id": "chatter-anthropic",
       "fromNode": "chatter",
       "toNode": "anthropic",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "Stream",
       "color": "#FF1493",
       "pv": {
@@ -252,6 +264,8 @@
       "id": "chatter-openai",
       "fromNode": "chatter",
       "toNode": "openai",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "Stream",
       "color": "#FF1493",
       "pv": {
@@ -262,6 +276,8 @@
       "id": "chatter-gemini",
       "fromNode": "chatter",
       "toNode": "gemini",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "Stream",
       "color": "#FF1493",
       "pv": {
@@ -272,6 +288,8 @@
       "id": "chatter-ollama",
       "fromNode": "chatter",
       "toNode": "ollama",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "Stream",
       "color": "#FF1493",
       "pv": {
@@ -282,6 +300,8 @@
       "id": "registry-fsdb",
       "fromNode": "registry",
       "toNode": "fsdb",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "Uses",
       "color": "#9370DB",
       "pv": {
@@ -292,6 +312,8 @@
       "id": "fsdb-patterns",
       "fromNode": "fsdb",
       "toNode": "patterns",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "Read",
       "color": "#FFD700",
       "pv": {
@@ -302,6 +324,8 @@
       "id": "template-patterns",
       "fromNode": "template",
       "toNode": "patterns",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "Read",
       "color": "#FFD700",
       "pv": {
@@ -312,6 +336,8 @@
       "id": "cli-youtube",
       "fromNode": "cli",
       "toNode": "youtube",
+      "fromSide": "left",
+      "toSide": "right",
       "label": "API Call",
       "color": "#00FF7F",
       "pv": {
